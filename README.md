@@ -1,8 +1,7 @@
 # AI Destekli Kimya Laboratuvarı
 
 ## Problem
-Kimya mühendisliği laboratuvarlarında (Fizikokimya, Akışkanlar Mekaniği, Analitik Kimya vb.) yapılan deneylerde, karmaşık matematiksel modellerin çözümü ve elde edilen sonuçların teorik olarak yorumlanması öğrenciler için zorlayıcı ve hataya açık bir süreçtir. Öte yandan, standart üretken yapay zeka araçları bu hesaplamalara yardımcı olmakta yetersiz kalmaktadır; çünkü anlık ölçüm verilerini analiz etmek yerine genellikle kendi eğitim verilerindeki teorik standart cevapları üreterek (halüsinasyon) kullanıcıyı yanıltmaktadır. 
-
+Günümüzde özellikle mühendislik ve fen bilimleri alanlarında öğrenciler, teorik bilgiyi anlamakta ve bunu uygulamaya dönüştürmekte zorluk yaşamaktadır. Mevcut dijital eğitim araçları çoğunlukla statik içerik sunmakta, etkileşim ve kişiselleştirme açısından yetersiz kalmaktadır. Bu durum, deneysel konularda öğrencilerin formüllerin mantığını kavrayamamasına, teori ile uygulama arasında bağ kuramamasına ve öğrenme sürecine aktif katılamamasına neden olmaktadır. Buna ek olarak birçok eğitim kurumunda laboratuvar imkanlarının sınırlı olması, ekipman erişiminin kısıtlılığı, kalabalık sınıflar ve maliyet-güvenlik gibi nedenlerle deneylerin yeterince yapılamaması veya tekrar edilememesi, deneysel öğrenmeyi ciddi şekilde kısıtlamaktadır. Tüm bu eksiklikler, öğrencilerin ezbere dayalı öğrenmeye yönelmesine ve bilgi kalıcılığının düşmesine yol açmaktadır.
 ## Çözüm
 Kullanıcıların sadece "Deney Adı" ve "Ölçülen Değerler"i girerek anında, hatasız ve adım adım çözüm alabildiği dinamik bir laboratuvar asistanı geliştirdim. Özel yapılandırılmış sistem promptları ve "Temperature: 0" kısıtlaması sayesinde yapay zekanın ezberden konuşması tamamen engellenmiştir. Sistem arka planda doğru formülü dinamik olarak tespit eder, *sadece* kullanıcının girdiği verileri kullanarak hesaplama yapar ve çıktıyı üç net başlık altında sunar: 
 1. Kullanılan Formül ve Mantığı 
