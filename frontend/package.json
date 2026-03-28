@@ -1,7 +1,0 @@
-{
-  "name": "bkg-lab-frontend",
-  "private": true,
-  "scripts": {
-    "build": "node scripts/build-api-config.js"
-  }
-}
