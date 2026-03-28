@@ -1,4 +1,4 @@
-# AI Destekli Kimya Laboratuvarı
+# ChemBuddy-AI Destekli Kimya Laboratuvarı
 
 ## Problem
 Günümüzde özellikle mühendislik ve fen bilimleri alanlarında öğrenciler, teorik bilgiyi anlamakta ve bunu uygulamaya dönüştürmekte zorluk yaşamaktadır. Mevcut dijital eğitim araçları çoğunlukla statik içerik sunmakta, etkileşim ve kişiselleştirme açısından yetersiz kalmaktadır. Bu durum, deneysel konularda öğrencilerin formüllerin mantığını kavrayamamasına, teori ile uygulama arasında bağ kuramamasına ve öğrenme sürecine aktif katılamamasına neden olmaktadır. Buna ek olarak birçok eğitim kurumunda laboratuvar imkanlarının sınırlı olması, ekipman erişiminin kısıtlılığı, kalabalık sınıflar ve maliyet-güvenlik gibi nedenlerle deneylerin yeterince yapılamaması veya tekrar edilememesi, deneysel öğrenmeyi ciddi şekilde kısıtlamaktadır. Tüm bu eksiklikler, öğrencilerin ezbere dayalı öğrenmeye yönelmesine ve bilgi kalıcılığının düşmesine yol açmaktadır.
