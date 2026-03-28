@@ -2,11 +2,9 @@
 
 ## Problem
 Günümüzde özellikle mühendislik ve fen bilimleri alanlarında öğrenciler, teorik bilgiyi anlamakta ve bunu uygulamaya dönüştürmekte zorluk yaşamaktadır. Mevcut dijital eğitim araçları çoğunlukla statik içerik sunmakta, etkileşim ve kişiselleştirme açısından yetersiz kalmaktadır. Bu durum, deneysel konularda öğrencilerin formüllerin mantığını kavrayamamasına, teori ile uygulama arasında bağ kuramamasına ve öğrenme sürecine aktif katılamamasına neden olmaktadır. Buna ek olarak birçok eğitim kurumunda laboratuvar imkanlarının sınırlı olması, ekipman erişiminin kısıtlılığı, kalabalık sınıflar ve maliyet-güvenlik gibi nedenlerle deneylerin yeterince yapılamaması veya tekrar edilememesi, deneysel öğrenmeyi ciddi şekilde kısıtlamaktadır. Tüm bu eksiklikler, öğrencilerin ezbere dayalı öğrenmeye yönelmesine ve bilgi kalıcılığının düşmesine yol açmaktadır.
+
 ## Çözüm
-Kullanıcıların sadece "Deney Adı" ve "Ölçülen Değerler"i girerek anında, hatasız ve adım adım çözüm alabildiği dinamik bir laboratuvar asistanı geliştirdim. Özel yapılandırılmış sistem promptları ve "Temperature: 0" kısıtlaması sayesinde yapay zekanın ezberden konuşması tamamen engellenmiştir. Sistem arka planda doğru formülü dinamik olarak tespit eder, *sadece* kullanıcının girdiği verileri kullanarak hesaplama yapar ve çıktıyı üç net başlık altında sunar: 
-1. Kullanılan Formül ve Mantığı 
-2. Adım Adım İşlem (Verilerin Yerine Konması) 
-3. Analiz Çıktısı (Sonucun kimyasal/fiziksel yorumu).
+Bu problem doğrultusunda geliştirilen yapay zeka destekli eğitim aracı, öğrencilerin teorik bilgiyi aktif ve etkileşimli bir şekilde öğrenmesini sağlayan bütünleşik bir öğrenme platformu sunmaktadır. Sistem, kullanıcıya özel içerik üretimi yaparak öğrenme sürecini kişiselleştirirken, aynı zamanda deneysel konular için interaktif simülasyonlar ve adım adım yönlendirmeli deney akışları sunarak teori ile uygulama arasındaki bağı güçlendirmektedir. Kullanıcılar, deneyleri dijital ortamda tekrar edebilir, farklı parametreleri değiştirerek sonuçları gözlemleyebilir ve anlık geri bildirimler sayesinde hatalarını anında anlayabilir. Ayrıca bu araç, fiziksel laboratuvar imkanlarının yetersiz olduğu durumlarda alternatif bir çözüm sunarak öğrencilerin deneysel düşünme becerilerini geliştirmeyi hedeflemektedir. Böylece öğrenme süreci pasif içerik tüketiminden çıkarılarak, aktif, keşfederek öğrenmeye dayalı ve sürdürülebilir bir yapıya dönüştürülmektedir.
 
 ## Canlı Demo
 Yayın Linki: https://chem-buddy.lovable.app
