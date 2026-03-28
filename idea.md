@@ -9,7 +9,9 @@ Kimya öğrencileri teorik bilgiyi pratiğe dönüştürmekte ve lab derslerine 
 - Öğretmenler (demo amaçlı)
 
 ## AI'ın Rolü
-Gemini API üç kritik modda çalışır:
-1. **Analiz** — Hata ve sapma tespiti, yorumlama
-2. **Öğretim** — Kavram açıklama, analoji kurma
-3. **Simülasyon** — Multi-turn sanal lab rehberliği
+AI sistemi dört kritik modda çalışır:
+
+Analiz — Kullanıcının yaptığı hataları, kavramsal eksiklerini ve öğrenme seviyesini tespit eder, kişiye özel geri bildirim sunar
+Öğretim — Kavramları sadeleştirerek açıklar, analojiler kurar ve formüllerin mantığını adım adım öğretir
+Deney Adımları — Sanal laboratuvar ortamında kullanıcıyı yönlendirir, deney sürecini aşama aşama simüle eder ve etkileşimli öğrenme sağlar
+Quiz — Öğrenilen bilgileri ölçer, adaptif sorular üretir ve performansa göre zorluk seviyesini ayarlar
