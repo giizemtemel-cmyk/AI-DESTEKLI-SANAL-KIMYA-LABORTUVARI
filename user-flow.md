@@ -1,26 +1,29 @@
-## 🔄 Kullanıcı Akışı (User Flow)
+# 🗺️ Kullanıcı Akışı (User Flow)
 
-Uygulamanın çalışma mantığı, kullanıcının laboratuvar verilerini girip yapay zekadan anında doğrulanmış geri bildirim alması üzerine kuruludur:
+Bu belge, bir kimya öğrencisinin sanal laboratuvar uygulamasını adım adım nasıl kullanacağını gösterir.
 
-**1. Arayüze Giriş (Landing):**
-Kullanıcı web uygulamasına erişir ve sade, laboratuvar temalı arayüzle karşılaşır.
+### Adım 1: Uygulamaya Giriş
+* Kullanıcı web sitesini açar.
+* Karşısına laboratuvar temalı, sade bir ana ekran çıkar.
 
-**2. Parametre ve Veri Girişi:**
-Kullanıcı; gerçekleştirdiği **Deneyin Adını** ve laboratuvarda ölçtüğü/verilen değerleri (örn: sıcaklık, hacim, süre, yoğunluk) ilgili giriş alanlarına yazar.
+### Adım 2: Asistan (Mod) Seçimi
+Kullanıcı, o anki ihtiyacına göre ekrandaki 4 farklı yapay zeka modundan birini seçer:
+1. Öğretim Modu
+2. Deney Adımları Modu
+3. Analiz Modu
+4. Quiz Modu
 
-**3. İşlem Seçimi (Aksiyon):**
-Kullanıcı, yapmak istediği işleme göre menüden bir mod seçer:
-- `🧪 Analiz Et:` Girilen verilerle matematiksel hesaplama ve hata analizi yapar.
-- `🎓 Konuyu Öğret:` Deneyin arkasındaki teorik fizikokimya/termodinamik prensiplerini anlatır.
-- `🔬 İnteraktif Deney / 📝 Quiz Başlat:` Konuyu pekiştirmek için kullanıcıyı teste tabi tutar.
+### Adım 3: Etkileşim ve Veri Girişi
+Kullanıcı seçtiği moda göre asistanla konuşmaya başlar:
+* **Öğretim modundaysa:** Anlamadığı bir kimya konusunun mantığını sorar.
+* **Deney Adımları modundaysa:** Yapacağı bir deneyin sırasıyla nasıl yapılacağını ve nelere dikkat etmesi gerektiğini sorar.
+* **Analiz modundaysa:** Laboratuvarda ölçtüğü sayısal verileri veya çözemediği bir formülü sisteme girer.
+* **Quiz modundaysa:** Öğrendiklerini test etmek için sistemden kendisine soru sormasını ister.
 
-**4. Arka Plan İşlemi (Backend & AI API):**
-- Frontend, girilen verileri güvenli bir şekilde Node.js sunucusuna iletir.
-- Sunucu, verileri özel hazırlanmış bir "System Prompt" (Sıfır halüsinasyon, Temperature: 0) ile paketleyerek Google Gemini API'ye gönderir.
-- Yapay Zeka, sadece kullanıcının girdiği anlık verileri referans alarak doğru formülü bulur ve hesaplamayı tamamlar.
+### Adım 4: Anında Yanıt Alma
+* Yapay zeka asistanı kullanıcının sorusunu veya verisini saniyeler içinde işler.
+* Ekranda öğrencinin seviyesine uygun, net ve açıklayıcı bir cevap belirir.
 
-**5. Çıktı ve Görüntüleme (Output):**
-İşlenen veriler arayüze döner ve kullanıcı ekranında 3 yapılandırılmış başlık halinde gösterilir:
-1. **Kullanılan Formül** (Örn: Poiseuille Denklemi)
-2. **Adım Adım Hesaplama** (Verilerin formülde yerine konmuş hali)
-3. **Analiz/Öğretim Çıktısı** (Bulunan sonucun kimyasal yorumu)
+### Adım 5: Sürece Devam Etme
+* Kullanıcı aldığı cevaba göre aynı asistana yeni sorular sorarak sohbete devam edebilir.
+* İsterse ana menüye dönüp başka bir moda geçebilir (Örneğin; Öğretim modunda teoriyi öğrendikten sonra Quiz moduna geçip kendini test edebilir).
