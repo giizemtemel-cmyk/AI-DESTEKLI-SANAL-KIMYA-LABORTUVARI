@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AI Destekli Kimya Laboratuvar Platformu</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="fileOpenBanner" class="file-open-banner" hidden role="status">
+      <strong>Dosya olarak açıldı (file://):</strong> API için sunucu gerekir. Proje klasöründe
+      <code>npm start</code> çalıştırıp ardından
+      <a id="fileOpenBannerLink" href="http://127.0.0.1:3000">http://127.0.0.1:3000</a>
+      adresine gidin (index.html’e çift tıklamak yerine).
+    </div>
+    <div class="bg"></div>
+    <div class="lab-overlay" aria-hidden="true"></div>
+
+    <main class="container">
+      <section class="card hero">
+        <h1>AI Destekli Sanal Kimya Laboratuvarı</h1>
+        <p>
+          Gerçek laboratuvar disiplinini dijital ortamda yaşa: deneyi analiz et,
+          teoriyi öğren, simülasyonla karar ver.
+        </p>
+
+        <div class="grid">
+          <label>
+            Deney Adı
+            <input id="experimentName" type="text" placeholder="Örn: Damıtma" />
+          </label>
+          <label>
+            Malzemeler
+            <input id="materials" type="text" placeholder="Örn: Liebig, balon, termometre, kolon" />
+          </label>
+          <label>
+            Sıcaklık (°C)
+            <input id="temperature" type="number" placeholder="Örn: 78" />
+          </label>
+          <label>
+            Ölçülen Değer
+            <div class="inline-field">
+              <input id="measured" type="number" placeholder="Örn: 9.6" />
+              <input id="measuredUnit" type="text" placeholder="Birim (mL, cm, g...)" />
+            </div>
+          </label>
+          <label>
+            Beklenen Değer
+            <div class="inline-field">
+              <input id="expected" type="number" placeholder="Örn: 10" />
+              <input id="expectedUnit" type="text" placeholder="Birim (mL, cm, g...)" />
+            </div>
+          </label>
+        </div>
+
+        <div class="actions">
+          <button id="analyzeBtn" type="button">🔬 Analiz Et</button>
+          <button id="teachBtn" type="button">🎓 Konuyu Öğret</button>
+          <button id="simulateBtn" type="button">🧪 İnteraktif Deney</button>
+          <button id="quizBtn" type="button">🧠 Quiz Başlat</button>
+        </div>
+      </section>
+
+      <section class="card panel">
+        <h2>📊 Analiz Çıktısı</h2>
+        <div id="analysisOutput" class="output muted">
+          Analiz için verileri girip "Analiz Et" butonuna basın.
+        </div>
+      </section>
+
+      <section class="card panel">
+        <h2>📘 Öğretim Çıktısı</h2>
+        <div id="teachingOutput" class="output muted">
+          Detaylı teorik anlatım için "Konuyu Öğret" butonuna basın.
+        </div>
+      </section>
+
+      <section class="card panel">
+        <h2>🎬 İnteraktif Deney</h2>
+        <div id="simulationOutput" class="output muted">
+          Etkileşimli laboratuvar deneyimi için "İnteraktif Deney" butonuna basın.
+        </div>
+      </section>
+
+    </main>
+
+    <div id="quizModal" class="quiz-modal hidden" role="dialog" aria-modal="true" aria-labelledby="quizTitle">
+      <div class="quiz-modal-card">
+        <div class="quiz-header">
+          <h2 id="quizTitle">Deney Quizi</h2>
+          <button id="quizCloseBtn" type="button" class="quiz-close-btn" aria-label="Quizi kapat">×</button>
+        </div>
+        <div id="quizSubtitle" class="quiz-note">Son öğretim çıktısına göre teknik değerlendirme soruları</div>
+        <div id="quizProgress" class="quiz-progress">Soru 1/5</div>
+        <div id="quizBody" class="quiz-body"></div>
+        <div id="quizActions" class="quiz-actions"></div>
+      </div>
+    </div>
+
+    <script src="api-config.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
