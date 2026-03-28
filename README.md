@@ -10,8 +10,8 @@ Kullanıcıların sadece "Deney Adı" ve "Ölçülen Değerler"i girerek anında
 3. Analiz Çıktısı (Sonucun kimyasal/fiziksel yorumu).
 
 ## Canlı Demo
-Yayın Linki: https://[proje-adin].lovable.app
-Demo Video: https://loom.com/share/[video-id]
+Yayın Linki: https://chem-buddy.lovable.app
+Demo Video: https://www.loom.com/share/c9a7e560ea91451c992bd8fdda9812e9
 
 ## Kullanılan Teknolojiler
 - **Frontend:** HTML5, CSS3, Vanilla JavaScript
